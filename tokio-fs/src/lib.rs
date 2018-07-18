@@ -35,6 +35,7 @@ extern crate tokio_threadpool;
 
 pub mod file;
 mod metadata;
+mod read_dir;
 mod stdin;
 mod stdout;
 mod stderr;
@@ -42,6 +43,7 @@ mod stderr;
 pub use file::File;
 pub use file::OpenOptions;
 pub use metadata::{metadata, MetadataFuture};
+pub use read_dir::{read_dir, ReadDirFuture, ReadDir, DirEntry};
 pub use stdin::{stdin, Stdin};
 pub use stdout::{stdout, Stdout};
 pub use stderr::{stderr, Stderr};
