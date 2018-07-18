@@ -39,6 +39,7 @@ mod read_dir;
 mod stdin;
 mod stdout;
 mod stderr;
+mod symlink_metadata;
 
 pub use file::File;
 pub use file::OpenOptions;
@@ -47,6 +48,7 @@ pub use read_dir::{read_dir, ReadDirFuture, ReadDir, DirEntry};
 pub use stdin::{stdin, Stdin};
 pub use stdout::{stdout, Stdout};
 pub use stderr::{stderr, Stderr};
+pub use symlink_metadata::{symlink_metadata, SymlinkMetadataFuture};
 
 use futures::Poll;
 use futures::Async::*;
